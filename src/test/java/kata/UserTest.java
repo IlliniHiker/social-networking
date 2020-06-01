@@ -21,4 +21,14 @@ public class UserTest {
         user1.followUser(user2);
         assertEquals(user2, user1.getFollowing().get(userName2));
     }
+
+    @Test
+    void testPostMessage() {
+        String userName = "Alice";
+        User user = new User(userName);
+        String message = "I love the weather today!";
+        user.postMessage(message);
+
+        assertEquals(message, );
+    }
 }
