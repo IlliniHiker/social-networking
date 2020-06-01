@@ -29,6 +29,6 @@ public class UserTest {
         String message = "I love the weather today!";
         user.postMessage(message);
 
-        assertEquals(message, );
+        assertEquals(message, user.getMessages().entrySet().iterator().next().getValue().getMessage());
     }
 }
