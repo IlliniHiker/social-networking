@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Wall {
-    private static Map<Integer, User> users = new HashMap<Integer, User>();
-    private static Map<Integer, Message> messages = new HashMap<Integer, Message>();
+    private static Map<Integer, User> users = new HashMap<>();
+    private static Map<Integer, Message> messages = new HashMap<>();
 
     private Wall() {}
 
