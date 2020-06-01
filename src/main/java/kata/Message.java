@@ -18,5 +18,6 @@ public class Message {
         message = Message;
         timestamp = Instant.now();
         id = MessageId.getNextId();
+        Wall.addMessage(this);
     }
 }
