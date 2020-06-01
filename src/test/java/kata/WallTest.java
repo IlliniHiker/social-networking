@@ -9,8 +9,9 @@ public class WallTest {
     void testAddUserToWall() {
         String userName = "Alice";
         User user1 = new User(userName);
+        Integer id = user1.getId();
 
-        assertEquals(userName, Wall.getUsers().entrySet().iterator().next().getValue().getName());
+        assertEquals(user1, Wall.getUsers().get(id));
     }
 
     @Test

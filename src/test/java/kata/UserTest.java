@@ -19,7 +19,8 @@ public class UserTest {
         User user1 = new User(userName1);
         User user2 = new User(userName2);
         user1.followUser(user2);
-        assertEquals(user2, user1.getFollowing().get(userName2));
+        Integer user2Id = user2.getId();
+        assertEquals(user2, user1.getFollowing().get(user2Id));
     }
 
     @Test
