@@ -8,6 +8,7 @@ public class User {
     private Map<String, User> following = new HashMap<String, User>();
 
     public String getName() { return this.name; }
+    public Map<String, User> getFollowing() { return this.following; }
 
     public User(String Name) {
         name = Name;
