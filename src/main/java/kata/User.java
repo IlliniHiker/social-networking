@@ -22,6 +22,6 @@ public class User {
 
     public void postMessage(String Message) {
         Message message = new Message(this, Message);
-        messages.put(ID, message);
+        messages.put(message.getId(), message);
     }
 }
