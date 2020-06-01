@@ -10,6 +10,6 @@ public class WallTest {
         String userName = "Alice";
         User user1 = new User(userName);
 
-        assertEquals();
+        assertEquals(userName, users ...);
     }
 }
